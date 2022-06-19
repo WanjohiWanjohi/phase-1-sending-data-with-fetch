@@ -9,7 +9,19 @@
   </head>
 
   <body>
-    <script src="index.js"></script>
+    <h1>Sample Form</h1>
+    <form action="http://localhost:3000/users" method="POST">
+      <label> User Name: <input type="text" name="userName" id="userName" /></label><br />
+      <label> User Email: <input type="text" name="userEmail" id="userEmail" /></label><br />
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    <div id="Content">
+      <ul id="AddedIds" name="AddedIds">
+
+      </ul>
+      <p id = "errorMessage"></p>
+    </div>
+        <script src="index.js"></script>
   </body>
 
 </html>
